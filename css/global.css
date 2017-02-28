@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+.navlinks a{
+    display: block;
+}
+
+.card {
+    max-width: 250px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    background: #ffffff;
+    display: inline-block;
+}
+
+.card-caption {
+    text-align: left;
+}
+
+.card-price {
+    text-align: right;
+}
+

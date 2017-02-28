@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Vintage Board Games</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="topnavbar container-fluid">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <span>Etsy</span>
+                    <span>
+                        <input type="text">
+                        <button type="button" class="btn btn-info">Search</button>
+                    </span>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <a href="?">Sell On Etsy</a>
+                    <a href="?">Register</a>
+                    <button type="button" class="btn btn-info">Sign In</button> |
+                    <button type="button" class="btn btn-default glyphicon glyphicon-shopping-cart"><br/>Cart</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-11">
+                    <a href="?">Clothing &amp; Accessories</a>
+                    <a href="?">Jewelry</a>
+                    <a href="?">Craft Supplies &amp; Tools</a>
+                    <a href="?">Weddings</a>
+                    <a href="?">Entertainment</a>
+                    <a href="?">Home &amp; Living</a>
+                    <a href="?">Kids &amp; Baby</a>
+                    <a href="?">Vintage</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <span class="col-sm-3 sidenav text-left">
+                    <div>Show Results For:</div>
+                    <div class="well navlinks">
+                        <a href="?">All Categories</a>
+                        <a href="?">Toys &amp; Games</a>
+                        <a href="?">Art &amp; Collectibles</a>
+                        <a href="?">Craft Supplies &amp; Tools</a>
+                        <a href="?">Home &amp; Living</a>
+                        <a href="?">Paper &amp; Party Supplies</a>
+                        <a href="?">Books, Movies &amp; Music</a>
+                        <a href="?">Accessories</a>
+                        <a href="?">Clothing</a>
+                        <a href="?">Electronics &amp; Accessories</a>
+                        <a href="?">Jewelry</a>
+                        <a href="?">Weddings</a>
+                        <a href="?">Bags &amp; Purses</a>
+                    </div>
+                    <span>Refine Your Search</span>
+                <div class="well">
+                    Shop Location
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="locationsRadios" id="locationsRadios1" value="anywhere" checked>
+                                Anywhere
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="locationsRadios" id="locationsRadios2" value="unitedStates">
+                                United States
+                        </label>
+                    </div>
+                    <span>Choose a custom location</span>
+                    <hr/>
+                    Item Type
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="itemTypeRadios" id="itemTypeRadios1" value="allItems" checked>
+                                All Items
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="itemTypeRadios" id="itemTypeRadios2" value="handmade">
+                                Handmade
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="itemTypeRadios" id="itemTypeRadios3" value="vintage">
+                                Vintage
+                        </label>
+                    </div>
+                    <hr/>
+                    Price ($)
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="priceRadios" id="priceRadios1" value="anyPrice" checked>
+                                Any Price
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="priceRadios" id="priceRadios2" value="under25">
+                                Under $25
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="priceRadios" id="priceRadios3" value="25to50">
+                                $25 to $50
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="priceRadios" id="priceRadios4" value="50to100">
+                                $50 to $100
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="priceRadios" id="priceRadios5" value="over100">
+                                Over $100
+                        </label>
+                    </div>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="low" placeholder="Low">
+                        </div>  
+                             to 
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="high" placeholder="High">
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+                </span>
+
+                <div class="col-sm-9" id="app">
+                    <div class="text-left">Did you mean the shop boardgames?</div>
+                    <span class="text-left">All categories > "board games" (13,396 Results)</span>
+                    <span class="text-right">Sort By: Relevancy</span>
+                    <br/>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="js/global.js"></script>
+</body>
+
+</html>
