@@ -23,3 +23,15 @@ body {
 .card-caption {
     text-align: center;
 }
+
+.button .yellow {
+    background-color: yellow;
+}
+
+.button .purple {
+    background-color: rebeccapurple;
+}
+
+.button .black {
+    background-color: black;
+}
