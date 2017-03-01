@@ -5,10 +5,12 @@ img {
     width: 100%;
 }
 
-.etsy-title {
-    color: darkorange;
-    font-size: 40px;
-    padding: 20px 20px;
+header {
+    padding-top: 25px;
+}
+
+.logo {
+    width: 120px;
 }
 
 .navtop {
@@ -30,25 +32,27 @@ img {
 }
 
 .card {
-    max-width: 250px;
+    max-width: 300px;
+    min-height: 280px;
     border: 1px solid lightgray;
     border-radius: 5px;
-    padding: 1px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
     background: #ffffff;
-    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .card-caption {
-    text-align: left;
+    padding: 10px;
 }
 
 .card-shop {
     text-align: left;
+    padding-top: 10px;
 }
 
 .card-price {
     text-align: right;
+    padding-top: 10px;
 }
 
 .flag {
@@ -58,9 +62,11 @@ img {
 
 .well {
     background: white;
+    padding-left: 30px;
 }
 
 main {
+    padding-top: 20px;
     background: #faf9f5;
 }
 

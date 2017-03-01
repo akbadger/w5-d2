@@ -10,26 +10,36 @@
     <link rel="stylesheet" href="css/global.css" />
     <script src="https://use.fontawesome.com/3c60607828.js"></script>
 </head>
+
 <body>
     <header>
         <div class="topnavbar container-fluid">
             <div class="row">
                 <div class="col-sm-6 text-left">
-                    <span class="etsy-title">Etsy</span>
+                    <!--<span>
+                        
+                        <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </span>
+                    </div>-->
                     <span>
+                        <img src="img/etsy-logo.png" class="logo" alt="Etsy logo"/>
                         <input type="text">
                         <button type="button" class="btn btn-info">Search</button>
                     </span>
-                
+
                 </div>
                 <div class="col-sm-6 text-right">
                     <a href="?">Sell On Etsy</a>
                     <a href="?">Register</a>
                     <button type="button" class="btn btn-info">Sign In</button> |
                     <button type="button" class="btn btn-default glyphicon glyphicon-shopping-cart"><br/>Cart</button>
-            
+
                 </div>
-                
+
             </div>
 
             <div class="row navtop">
@@ -42,7 +52,7 @@
                     <a href="?">Entertainment</a>
                     <a href="?">Home &amp; Living</a>
                     <a href="?">Kids &amp; Baby</a>
-                    <a href="?">Vintage</a>
+                    <a href="?">Vintage</a><br/>
                 </div>
             </div>
             <hr/>
@@ -178,13 +188,25 @@
                     </div>
                 </div>
                 </span>
-
-                <div class="col-sm-9" id="app">
-                    <div class="text-left">Did you mean the shop boardgames?</div>
-                    <span class="text-left">All categories > "board games" (13,396 Results)</span>
-                    <span class="text-right">Sort By: Relevancy</span>
+               <div class="col-sm-9" id="app">
+                    <p class="text-left">Did you mean the shop boardgames?</p>
+                    <span><a href="?">All Categories</a> "board games" (13,396 Results)</span>
+                    <span class="pull-right">Sort By: Relevancy</span>
                     <br/>
-                </div>  
+                    <div class="row" id="cards">
+                        <!--<div class="col-sm-4 col-md-3">
+                            <div class="card">
+                                <img src="https://unsplash.it/400?image=985" />
+                                <div class="card-caption">
+                                    <div> Product description...</div>
+                                    <div>
+                                        <span class="text-muted">HBakerStudio</span> <span class="pull-right text-success">$18.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-3"></div>
@@ -206,12 +228,12 @@
                     <button type="button" class="btn btn-default glyphicon glyphicon-chevron-right"></button>
                     <div class="text-center">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</div>
                     <div class="text-center">
-                        <input type="text" placeholder="Enter your email"/> <button type="button" class="btn btn-info">Subscribe</button>
+                        <input type="text" placeholder="Enter your email" /> <button type="button" class="btn btn-info">Subscribe</button>
                     </div>
                 </div>
             </div>
             <hr/>
-    </main> 
+    </main>
     <footer>
         <div class="row text-center">
             <div class="col-sm-1"></div>
@@ -258,7 +280,7 @@
                 <a href="?"><i class="fa fa-instagram"></i> Instagram</a>
             </div>
             <div class="col-sm-1"></div>
-            
+
         </div>
         <div class="row">
             <div class="col-sm-6 text-left">
@@ -269,14 +291,14 @@
                 <a href="?">Legal</a>
                 <a href="?">Privacy</a>
                 <a href="?">Interest-based ads</a>
-                <button type="button" class="btn btn-default">Help</button>                
+                <button type="button" class="btn btn-default">Help</button>
             </div>
         </div>
     </footer>
-            </div>
-        <!--</div>
+    </div>
+    <!--</div>
         </div>-->
-    
+
 
     <script src="js/global.js"></script>
 </body>

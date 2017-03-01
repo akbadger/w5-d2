@@ -1,124 +1,158 @@
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
+var searchResults = {};
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
+getSearchResults('board games');
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
+function getSearchResults(searchTerm) {
+    fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent(searchTerm) + '&includes=Images,Shop')
+        .then(response => response.json())
+        .then(data => {
+            searchResults = data;
+            
+            console.log(searchResults);
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
+            renderResultCards();
+        });
+}
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
+function renderResultCards() {
+    searchResults.results.forEach(createUserCard)
+}
 
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-createCard({
-    src: 'https://unsplash.it/400?image=985',
-    caption: 'Something Else',
-    shop: 'This Place',
-    price: '$37.00'
-});
-
-function createCard(image) {
-    var card = `<div class="card">
-        <img src=${image.src} alt="image"/>
-        <h5 class="card-caption">${image.caption}</h5>
-        <span class="card-shop">${image.shop}</span>
-        <span class="card-price">${image.price}</span>
+function createUserCard(card) {
+    var resultCard = `<div class="col-sm-4 col-md-3">
+        <div class="card">
+            <img src=${card.Images[0].url_170x135} />
+            <div class="card-caption">
+            <div>${card.title.slice(0, 50)}...</div>
+            <div>
+            <span class="text-muted card-shop">${card.Shop.shop_name}</span> <span class="pull-right text-success card-price">${card.price}</span>
+            </div>
+            </div>
+        </div>
     </div>`
 
-    document.querySelector('#app').innerHTML += card
-}
+    document.querySelector('#cards').innerHTML += resultCard;
+    
+};
+
+// function renderResultsCards() {
+//     results.forEach(function(result) {
+
+//     });
+// }
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// });
+
+// createCard({
+//     src: 'https://unsplash.it/400?image=985',
+//     caption: 'Something Else',
+//     shop: 'This Shop',
+//     price: '$37.00'
+// }); 
+
+
 
