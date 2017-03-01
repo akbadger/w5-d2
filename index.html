@@ -8,29 +8,32 @@
     <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css" />
-
+    <script src="https://use.fontawesome.com/3c60607828.js"></script>
 </head>
-
 <body>
     <header>
         <div class="topnavbar container-fluid">
             <div class="row">
                 <div class="col-sm-6 text-left">
-                    <span>Etsy</span>
+                    <span class="etsy-title">Etsy</span>
                     <span>
                         <input type="text">
                         <button type="button" class="btn btn-info">Search</button>
                     </span>
+                
                 </div>
                 <div class="col-sm-6 text-right">
                     <a href="?">Sell On Etsy</a>
                     <a href="?">Register</a>
                     <button type="button" class="btn btn-info">Sign In</button> |
                     <button type="button" class="btn btn-default glyphicon glyphicon-shopping-cart"><br/>Cart</button>
+            
                 </div>
+                
             </div>
 
-            <div class="row">
+            <div class="row navtop">
+                <hr/>
                 <div class="col-sm-11">
                     <a href="?">Clothing &amp; Accessories</a>
                     <a href="?">Jewelry</a>
@@ -42,6 +45,7 @@
                     <a href="?">Vintage</a>
                 </div>
             </div>
+            <hr/>
         </div>
     </header>
     <main>
@@ -160,12 +164,18 @@
                         <label>
                             <input type="checkbox" value="customizable">Customizable</label>
                     </div>
-                    
-
-
-
-
-
+                    <hr/>
+                    <div>Ship to</div>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> United States
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">France</a></li>
+                        </ul>
+                    </div>
                 </div>
                 </span>
 
@@ -174,11 +184,99 @@
                     <span class="text-left">All categories > "board games" (13,396 Results)</span>
                     <span class="text-right">Sort By: Relevancy</span>
                     <br/>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-9">
+                    <strong>Related to board games</strong>
+                    <div>board game accessories</div>
+                    <div>Looking for shops? <a href="?">boardgames</a>,<a href="?">BoardGamesFactory</a>,<a href="?">BoardGamesByDon</a>. <a href="?">See more.</a> </div>
+                    <button type="button" class="btn btn-default glyphicon glyphicon-chevron-left"></button>
+                    <button type="button" class="btn btn-default">1</button>
+                    <button type="button" class="btn btn-default">2</button>
+                    <button type="button" class="btn btn-default">3</button>
+                    <button type="button" class="btn btn-default">4</button>
+                    <button type="button" class="btn btn-default">5</button>
+                    <button type="button" class="btn btn-default">6</button>
+                    <button type="button" class="btn btn-default">7</button>
+                    <button type="button" class="btn btn-default">8</button>
+                    <button type="button" class="btn btn-default disabled">...</button>
+                    <button type="button" class="btn btn-default">250</button>
+                    <button type="button" class="btn btn-default glyphicon glyphicon-chevron-right"></button>
+                    <div class="text-center">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</div>
+                    <div class="text-center">
+                        <input type="text" placeholder="Enter your email"/> <button type="button" class="btn btn-info">Subscribe</button>
+                    </div>
                 </div>
             </div>
+            <hr/>
+    </main> 
+    <footer>
+        <div class="row text-center">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2">Turn your passion into a business
+                <button type="button" class="btn btn-info">Open a shop</button>
+                <div>Sell on Etsy</div>
+                <a href="?">Open a shop</a><br/>
+                <a href="?">Seller Handbook</a><br/>
+                <a href="?">Etsy credit card reader</a>
+                <a href="?">Manufacturing</a>
+            </div>
+            <div class="col-sm-2">
+                <div>Join the community</div>
+                <a href="?">Teams</a><br/>
+                <a href="?">Forums</a><br/>
+                <a href="?">Upcoming events</a><br/>
+                <a href="?">Affiliates</a><br/>
+                <a href="?">Etsy Local</a>
+            </div>
+            <div class="col-sm-2">
+                <div>Discover and shop</div>
+                <a href="?">Gift cards</a><br/>
+                <a href="?">Blog</a><br/>
+                <a href="?">Mobile Apps</a><br/>
+                <a href="?">Gift registries</a><br/>
+                <a href="?">Wholesale</a><br/>
+                <a href="?">Search</a><br/>
+                <a href="?">Editors' picks</a>
+            </div>
+            <div class="col-sm-2">
+                <div>Get to know us</div>
+                <a href="?">About</a><br/>
+                <a href="?">Policies</a><br/>
+                <a href="?">Careers</a><br/>
+                <a href="?">Press</a><br/>
+                <a href="?">Developers</a><br/>
+                <a href="?">Investors</a>
+            </div>
+            <div class="col-sm-2">
+                <div>Follow Etsy</div>
+                <a href="?"><i class="fa fa-facebook-official"></i> Facebook</a><br/>
+                <a href="?"><i class="fa fa-twitter"></i> Twitter</a><br/>
+                <a href="?"><i class="fa fa-pinterest"></i> Pinterest</a><br/>
+                <a href="?"><i class="fa fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="col-sm-1"></div>
+            
         </div>
+        <div class="row">
+            <div class="col-sm-6 text-left">
+                <button type="button" class="btn btn-default"> <img src="img/flag.png" class="flag img-responsive"/> United States | English (US) | $ (USD)</button>
+            </div>
+            <div class="col-sm-6 text-right">
+                <span><i class="fa fa-copyright"></i> 2017 Etsy, Inc.</span>
+                <a href="?">Legal</a>
+                <a href="?">Privacy</a>
+                <a href="?">Interest-based ads</a>
+                <button type="button" class="btn btn-default">Help</button>                
+            </div>
         </div>
-    </main>
+    </footer>
+            </div>
+        <!--</div>
+        </div>-->
+    
 
     <script src="js/global.js"></script>
 </body>
