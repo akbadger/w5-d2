@@ -3,6 +3,24 @@ var searchResults = {};
 
 getSearchResults('board games');
 
+// this code doesn't work ... but I feel like I'm close.
+document.addEventListener("keypress", searchWithEnterKey, true);
+
+function searchWithEnterKey(e) {
+    if (e.keycode == "13") {
+        document.querySelector('#cards').innerHTML = '';
+        
+    }
+    getSearchResults();
+}
+
+document.addEventListener('click', function(searchButton) {
+    var searchButton = document.querySelector('.btn-search');
+    document.querySelector('#cards').innerHTML = '';
+    getSearchResults();
+});
+// End of code that doesn't work.
+
 function getSearchResults(searchTerm) {
     fetch('https://thinksaydo.com/tiyproxy.php?https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent(searchTerm) + '&includes=Images,Shop')
         .then(response => response.json())
